@@ -3,17 +3,19 @@
   <head>
     <title>InAppBrowser.addEventListener Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova-3.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
-
+	
+    var ref = window.open('http://sweden.se', '_blank', 'location=yes', 'closebuttoncaption=Startpage');
+    
     // Wait for device API libraries to load
     //
-    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready",onDeviceReady,false);
 
     // device APIs are available
     //
-    function onDeviceReady() {
-         var ref = window.open('http://sweden.se', '_blank', 'location=yes', 'closebuttoncaption=Startpage');
+    function onDeviceReady() {    
+		alert('device ready');
          ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
          ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
          ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
