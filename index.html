@@ -15,29 +15,21 @@
     // device APIs are available
     //
     function onDeviceReady() {    
-		alert('device ready');
-    /*     ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         ref.addEventListener('exit', function(event) { alert(event.type); }); */
+	// Something that needs to happen "before" the page is loaded
     }
 
     </script>
   </head>
   <body>
-  <h1>Test of plugin for inappbrowser</h1>
+	<h1>Test of plugin for inappbrowser</h1>
   
-  <h1>New image links</h1>
-  <img src="1.jpg" alt="first link" width="150" height="100" onclick="window.open('http://www.sweden.se','_blank','location=yes','closebuttoncaption=Return');"/>
-  
-  <h1>Learn more about Sweden</h1>
-	</p>
-	<a href="http://www.sweden.se"><img src="1.jpg" alt="first link" width="300" height="200"></a>
-	<a href="http://www.sweden.se/ar"><img src="2.jpg" alt="second link" width="300" height="200"></a>
-	<a href="http://www.visitsweden.se"><img src="3.jpg" alt="third link" width="300" height="200"></a>
-	<a href="http://www.studyinsweden"><img src="4.jpg" alt="fourth link" width="300" height="200"></a>
-	</p>
-  
+	<h1>New image links</h1>
+	<img src="1.jpg" alt="first link" width="150" height="100" onclick="window.open('http://www.sweden.se','_blank','location=yes','closebuttoncaption=Return');"/>
+	<img src="2.jpg" alt="first link" width="150" height="100" onclick="window.open('http://www.sweden.se/ar','_blank','location=yes','closebuttoncaption=Return');"/>
+	<img src="3.jpg" alt="first link" width="150" height="100" onclick="window.open('http://www.visitsweden.se','_blank','location=yes','closebuttoncaption=Return');"/>
+	<img src="4.jpg" alt="first link" width="150" height="100" onclick="window.open('http://www.studyinsweden.se','_blank','location=yes','closebuttoncaption=Return');"/>
+	<img src="1.jpg" alt="youtube" width="150" height="100" onclick="window.open('http://www.youtube.com/watch?v=IgxZS4mWSrw','_blank','location=yes','closebuttoncaption=Return');"/>
+    
   <h2>Testing links</h2>
   <a href="#" onclick="window.open('http://www.sweden.se','_blank','location=yes','closebuttoncaption=Return');">Click Here for sweden.se</a>
   
