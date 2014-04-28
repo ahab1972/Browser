@@ -3,17 +3,17 @@
 
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "biz.ahab.browser"
-        version     = "1.0.11"
+        version     = "1.0.12"
         versionCode = "10" >
 
         <!-- versionCode is optional and Android only -->
 
         <preference name="phonegap-version" value="3.3.0" />
 
-        <name>InAppBrowser</name>
+        <name>Sweden Info</name>
 
         <description>
-        A browser for the fair
+        A browser for learning about Sweden at the Abu Dhabi International Book Fair 2014
         </description>
 		
         <author href="http://yoursite.com" email="you@youremail.com">
